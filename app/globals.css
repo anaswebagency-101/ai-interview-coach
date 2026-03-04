@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Body Styling */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8fafc;
+    color: #334155;
+}
+
+/* Scrollbar Styling */
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #a0aec0 #edf2f7;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 8px;
+}
+*::-webkit-scrollbar-track {
+    background: #edf2f7;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: #a0aec0;
+    border-radius: 10px;
+}
+
+/* Utility Classes */
+.gradient-text {
+    background: linear-gradient(90deg, #f72585, #7209b7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.glass-effect {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.glow-box {
+    box-shadow: 0 0 10px rgba(255, 227, 98, 0.8);
+}
+
+.transition-smooth {
+    transition: all 0.3s ease;
+}
